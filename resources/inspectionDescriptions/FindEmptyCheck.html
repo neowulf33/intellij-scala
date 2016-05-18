@@ -1,14 +1,19 @@
 <html>
 <body>
-Replaces find and emptiness check with exists. <br/><br/>
-Before:
-<p><code>seq.find(p).isDefined</code></p>
-<p><code>seq.find(p) != None</code></p>
-<p><code>seq.find(p).isEmpty</code></p>
-After:
-<p><code>seq.exists(p)</code></p>
-<p><code>seq.exists(p)</code></p>
-<p><code>!seq.exists(p)</code></p>
+Replaces find and emptiness check with exists.
+
+<p>
+    Before: <br>
+    <code>seq.find(p).isDefined</code>
+    <code>seq.find(p) != None</code>
+    <code>seq.find(p).isEmpty</code>
+</p>
+<p>
+    After: <br>
+    <code>seq.exists(p)</code>
+    <code>seq.exists(p)</code>
+    <code>!seq.exists(p)</code>
+</p>
 
 </body>
 </html>

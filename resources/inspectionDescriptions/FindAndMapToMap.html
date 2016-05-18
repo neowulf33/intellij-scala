@@ -1,12 +1,15 @@
 <html>
 <body>
-Replaces a call on a Map of find and map with apply. <br/>
-Before:
-<p><code>map.find(_ == k).map(_._2)</code></p>
+Replaces a call on a Map of find and map with apply.
 
-<p>After:</p>
-
-<p><code>map(k)</code></p>
+<p>
+    Before: <br>
+    <code>map.find(_ == k).map(_._2)</code>
+</p>
+<p>
+    After: <br>
+    <code>map(k)</code>
+</p>
 
 </body>
 </html>

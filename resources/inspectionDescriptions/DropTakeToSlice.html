@@ -4,12 +4,12 @@ Replaces composition of <code>drop</code> and <code>take</code> with <code>slice
 
 <p>
     Before: <br>
-    <code>seq.drop(n).take(m)</code><br>
+    <code>seq.drop(n).take(m)</code>
     <code>seq.take(m).drop(n)</code>
 </p>
 <p>
     After: <br>
-    <code>seq.slice(n, m + n)</code><br/>
+    <code>seq.slice(n, m + n)</code>
     <code>seq.slice(n, m)</code>
 </p>
 
