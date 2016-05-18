@@ -1,13 +1,16 @@
 <html>
 <body>
-Don't emulate <code>Option.apply(x)</code> method
-<p>Before:</p>
-<code>if (x == null) None else Some(x)</code><br>
-<code>if (x != null) Some(x) else None</code><br>
+Don't emulate <code>Option.apply(x)</code> method.
 
-<p>After:</p>
-
-<code>Option(x)</code><br>
+<p>
+    Before: <br>
+    <code>if (x == null) None else Some(x)</code>
+    <code>if (x != null) Some(x) else None</code>
+</p>
+<p>
+    After: <br>
+    <code>Option(x)</code>
+</p>
 
 </body>
 </html>
