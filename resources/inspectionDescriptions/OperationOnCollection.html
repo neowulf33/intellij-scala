@@ -1,19 +1,19 @@
 <html>
 <body>
-Detects if operation on collection may be simplified. <br />
-For example:
-<br />
+Detects if operation on collection may be simplified.
 
-<code>option.map(myValueIsGoodEnough).getOrElse(false)<br />
-    sequence.find(function).isDefined<br />
-    iterable.foldLeft(0) { _ + _ }</code>
-
-<br />
-<p>is the same as</p>
-<br />
-<code>option.exists(goodEnoughValue)<br />
-    sequence.exists(function)<br />
-    iterable.sum</code>
+<p>
+    Before: <br>
+    <code>option.map(myValueIsGoodEnough).getOrElse(false)</code>
+    <code>sequence.find(function).isDefined</code>
+    <code>iterable.foldLeft(0) { _ + _ }</code>
+</p>
+<p>
+    After: <br>
+    <code>option.exists(goodEnoughValue)</code>
+    <code>sequence.exists(function)</code>
+    <code>iterable.sum</code>
+</p>
 
 </body>
 </html>
