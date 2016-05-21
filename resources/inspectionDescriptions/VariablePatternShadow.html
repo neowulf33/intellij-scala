@@ -1,3 +1,26 @@
-<html><body>Detects a Variable Pattern that shadows a stable identifier defined in the enclosing scope.
-  To perform an equality test against that value, use backticks, e.g. <code>val foo = 0; 0 match {case `foo` => }</code>
-</body></html>
+<html>
+<body>
+Detects a Variable Pattern that shadows a stable identifier defined in the enclosing scope.
+To perform an equality test against that value, use backticks.
+
+<p>
+    Before: <br>
+    <code>m
+        val foo = 0
+        0 match {
+            case foo =>
+        }
+    </code>
+</p>
+<p>
+    After: <br>
+    <code>
+        val foo = 0
+        0 match {
+            case `foo` =>
+        }
+    </code>
+</p>
+
+</body>
+</html>
