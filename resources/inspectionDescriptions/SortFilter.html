@@ -3,14 +3,16 @@
 Swaps sort and filter for better performance.
 
 <p>
-    Before: <br>
-    <code>seq.sortWith(lessThan).filter(p)</code>
-    <code>seq.sortBy(f).filter(p)</code>
-</p>
-<p>
-    After: <br>
-    <code>seq.filter(p).sortWith(lessThan)</code>
-    <code>seq.filter(p).sortBy(f)</code>
+Before:
+<pre>
+seq.sortWith(lessThan).filter(p)
+seq.sortBy(f).filter(p)
+</pre>
+After:
+<pre>
+seq.filter(p).sortWith(lessThan)
+seq.filter(p).sortBy(f)
+</pre>
 </p>
 
 </body>

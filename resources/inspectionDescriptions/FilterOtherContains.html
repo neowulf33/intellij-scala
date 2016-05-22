@@ -4,18 +4,20 @@ Replaces <code>filter</code> or <code>filterNot</code> on a Set with <code>inter
 possible.
 
 <p>
-    Before: <br>
-    <code>set.filter(others.contains(_))</code>
-    <code>set.filterNot(others.contains))</code>
-    <code>set.filter(x => !others.contains(x))</code>
-    <code>set.filterNot(x => !others.contains(x))</code>
-</p>
-<p>
-    After: <br>
-    <code>set.intersect(others)</code>
-    <code>set.diff(others)</code>
-    <code>set.diff(others)</code>
-    <code>set.intersect(others)</code>
+Before: 
+<pre>
+set.filter(others.contains(_))
+set.filterNot(others.contains))
+set.filter(x => !others.contains(x))
+set.filterNot(x => !others.contains(x))
+</pre>
+After:
+<pre>
+set.intersect(others)
+set.diff(others)
+set.diff(others)
+set.intersect(others)
+</pre>
 </p>
 
 </body>

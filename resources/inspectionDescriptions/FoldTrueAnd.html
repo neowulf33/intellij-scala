@@ -3,12 +3,14 @@
 Replaces fold with forall if possible.
 
 <p>
-    Before: <br>
-    <code>seq.foldLeft(true)((x,y) => x && p(y))</code>
-</p>
-<p>
-    After: <br>
-    <code>seq.forall(p)</code>
+Before:
+<pre>
+seq.foldLeft(true)((x,y) => x && p(y))
+</pre>
+After:
+<pre>
+seq.forall(p)
+</pre>
 </p>
 
 </body>

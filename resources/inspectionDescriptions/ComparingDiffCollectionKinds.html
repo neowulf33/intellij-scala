@@ -4,14 +4,17 @@ Two scala collections cannot be equal if they are of different categories (Set, 
 with arrays is also pointless. Inspection suggests to convert one of the collection to make them of same kind.
 
 <p>
-    Before: <br>
-    <code>seq == iterator</code>
-    <code>seq != array</code>
+Before:
+<pre>
+seq == iterator
+seq != array
+</pre>
+After:
+<pre>
+seq.toIterator == iterator or seq == iterator.toSeq
+seq != array.toSeq
+</pre>
 </p>
-<p>
-    After: <br>
-    <code>seq.toIterator == iterator</code> or <code>seq == iterator.toSeq</code>
-    <code>seq != array.toSeq </code>
-</p>
+
 </body>
 </html>

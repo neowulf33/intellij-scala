@@ -3,18 +3,22 @@
 Don't emulate <code>headOption</code> or <code>lastOption</code>.
 
 <p>
-    Before: <br>
-    <code>if (seq.nonEmpty) Some(seq.head) else None</code>
-    <code>seq.lift(0)</code>
-    <code>if (seq.size == 0) None else seq.lastOption</code>
-    <code>seq.lift(seq.size - 1)</code>
-</p>
-<p>
-    After: <br>
-    <code>seq.headOption</code>
-    <code>seq.headOption</code>
-    <code>seq.lastOption</code>
-    <code>seq.lastOption</code>
+Before:
+<pre>
+if (seq.nonEmpty) Some(seq.head) else None
+seq.lift(0)
+
+if (seq.size == 0) None else seq.lastOption
+seq.lift(seq.size - 1)
+</pre>
+After:
+<pre>
+seq.headOption
+seq.headOption
+
+seq.lastOption
+seq.lastOption
+</pre>
 </p>
 
 </body>

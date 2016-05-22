@@ -4,20 +4,18 @@ Checks if anonymous function can be converted to eta expansion with or without p
 Also checks if placeholder can be removed from eta expansion.
 
 <p>
-    Before: <br>
-    <code>
-        def f(x: Any, y: Int) {} <br/>
-        val x = f(_, _) <br/>
-        val y: (Int, Int) => Unit = f _
-    </code>
-</p>
-<p>
-    After: <br>
-    <code>
-        def f(x: Any, y: Int) {}<br/>
-        val x = A.f _ <br/>
-        val y: (Int, Int) => Unit = A.f
-    </code>
+Before:
+<pre>
+def f(x: Any, y: Int) {}
+val x = f(_, _)
+val y: (Int, Int) => Unit = f _
+</pre>
+After:
+<pre>
+def f(x: Any, y: Int) {}
+val x = A.f _
+val y: (Int, Int) => Unit = A.f
+</pre>
 </p>
 
 </body>

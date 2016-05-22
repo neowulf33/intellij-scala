@@ -1,20 +1,18 @@
 <html>
 <body>
-Checks if an expression can be converted to SAM (Single Abstract Method).<br/>
+Checks if an expression can be converted to SAM (Single Abstract Method).
 
 <p>
-    Before: <br>
-    <code>
-        new Thread(new Runnable {
-          override def run() = println()
-        }
-    </code>
-</p>
-<p>
-    After: <br>
-    <code>
-        new Thread(() => println())
-    </code>
+Before:
+<pre>
+new Thread(new Runnable {
+    override def run() = println()
+}
+</pre>
+After:
+<pre>
+new Thread(() => println())
+</pre>
 </p>
 
 </body>

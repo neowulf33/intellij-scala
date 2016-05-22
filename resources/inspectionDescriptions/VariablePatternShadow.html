@@ -4,22 +4,20 @@ Detects a Variable Pattern that shadows a stable identifier defined in the enclo
 To perform an equality test against that value, use backticks.
 
 <p>
-    Before: <br>
-    <code>m
-        val foo = 0
-        0 match {
-            case foo =>
-        }
-    </code>
-</p>
-<p>
-    After: <br>
-    <code>
-        val foo = 0
-        0 match {
-            case `foo` =>
-        }
-    </code>
+Before: 
+<pre>
+val foo = 0
+0 match {
+    case foo =>
+}
+</pre>
+After: 
+<pre>
+val foo = 0
+0 match {
+    case `foo` =>
+}
+</pre>
 </p>
 
 </body>

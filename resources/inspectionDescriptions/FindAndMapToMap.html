@@ -3,12 +3,14 @@
 Replaces a call on a Map of find and map with apply.
 
 <p>
-    Before: <br>
-    <code>map.find(_ == k).map(_._2)</code>
-</p>
-<p>
-    After: <br>
-    <code>map(k)</code>
+Before:
+<pre>
+map.find(_ == k).map(_._2)
+</pre>
+After:
+<pre>
+map(k)
+</pre>
 </p>
 
 </body>

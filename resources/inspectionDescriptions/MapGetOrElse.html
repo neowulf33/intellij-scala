@@ -3,12 +3,14 @@
 Replaces map and getOrElse on Option by fold.
 
 <p>
-    Before: <br>
-    <code>option.map(f)getOrElse(default)</code>
-</p>
-<p>
-    After: <br>
-    <code>option.fold(default)(f)</code>
+Before: 
+<pre>
+option.map(f)getOrElse(default)
+</pre>
+After: 
+<pre>
+option.fold(default)(f)
+</pre>
 </p>
 
 </body>

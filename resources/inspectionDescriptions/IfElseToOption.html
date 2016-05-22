@@ -3,13 +3,15 @@
 Don't emulate <code>Option.apply(x)</code> method.
 
 <p>
-    Before: <br>
-    <code>if (x == null) None else Some(x)</code>
-    <code>if (x != null) Some(x) else None</code>
-</p>
-<p>
-    After: <br>
-    <code>Option(x)</code>
+Before:
+<pre>
+if (x == null) None else Some(x)
+if (x != null) Some(x) else None
+</pre>
+After:
+<pre>
+Option(x)
+</pre>
 </p>
 
 </body>

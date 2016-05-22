@@ -3,16 +3,18 @@
 Replaces find and emptiness check with exists.
 
 <p>
-    Before: <br>
-    <code>seq.find(p).isDefined</code>
-    <code>seq.find(p) != None</code>
-    <code>seq.find(p).isEmpty</code>
-</p>
-<p>
-    After: <br>
-    <code>seq.exists(p)</code>
-    <code>seq.exists(p)</code>
-    <code>!seq.exists(p)</code>
+Before:
+<pre>
+seq.find(p).isDefined
+seq.find(p) != None
+seq.find(p).isEmpty
+</pre>
+After:
+<pre>
+seq.exists(p)
+seq.exists(p)
+!seq.exists(p)
+</pre>
 </p>
 
 </body>

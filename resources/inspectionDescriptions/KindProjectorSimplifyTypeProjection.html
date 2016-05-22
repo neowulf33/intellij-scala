@@ -3,12 +3,14 @@
 This inspection runs when Kind Projector plugin is enabled. It finds type projections and converts them into Kind Projector format.
 
 <p>
-    Before: <br>
-    <code>def a: ({type L[A] = (A, A)})#L</code>
-</p>
-<p>
-    After: <br>
-    <code>def a: λ[A => (A, A)]</code>
+Before:
+<pre>
+def a: ({type L[A] = (A, A)})#L
+</pre>
+After:
+<pre>
+def a: λ[A => (A, A)]
+</pre>
 </p>
 
 </body>

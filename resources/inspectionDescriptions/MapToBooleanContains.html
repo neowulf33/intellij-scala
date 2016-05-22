@@ -3,14 +3,16 @@
 Replaces map with boolean function and contains true/false with <code>.exists()</code> or <code>!.forall()</code>.
 
 <p>
-    Before: <br>
-    <code>seq.map(p).contains(true)</code>
-    <code>seq.map(p).contains(false)</code>
-</p>
-<p>
-    After: <br>
-    <code>seq.exists(p)</code>
-    <code>!seq.forall(p)</code>
+Before:
+<pre>
+seq.map(p).contains(true)
+seq.map(p).contains(false)
+</pre>
+After:
+<pre>
+seq.exists(p)
+!seq.forall(p)
+</pre>
 </p>
 
 </body>

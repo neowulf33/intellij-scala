@@ -4,14 +4,16 @@ Equals on arrays and iterators checks reference equality which is rarely useful.
 content with <code>sameElements</code> method. Inspection also detects comparing arrays with scala sequences.
 
 <p>
-    Before: <br>
-    <code>Array(1) == Array(1) //false</code>
-    <code>Iterator(1) == Iterator(1) //false</code>
-</p>
-<p>
-    After: <br>
-    <code>Array(1) sameElements Array(1) //true</code>
-    <code>Iterator(1) sameElements Iterator(1) //true</code>
+Before:
+<pre>
+Array(1) == Array(1) //false
+Iterator(1) == Iterator(1) //false
+</pre>
+After:
+<pre>
+Array(1) sameElements Array(1) //true
+Iterator(1) sameElements Iterator(1) //true
+</pre>
 </p>
 
 </body>

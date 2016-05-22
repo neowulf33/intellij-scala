@@ -3,14 +3,16 @@
 Replaces map and getOrElse(false/true) with exists/forall.
 
 <p>
-    Before: <br>
-    <code>option.map(p).getOrElse(false)</code>
-    <code>option.map(p).getOrElse(true)</code>
-</p>
-<p>
-    After: <br>
-    <code>option.exists(p)</code>
-    <code>option.forall(p)</code>
+Before: 
+<pre>
+option.map(p).getOrElse(false)
+option.map(p).getOrElse(true)
+</pre>
+After: 
+<pre>
+option.exists(p)
+option.forall(p)
+</pre>
 </p>
 
 </body>

@@ -3,14 +3,18 @@
 Replaces exists or forall with contains if possible.
 
 <p>
-    Before: <br>
-    <code>set.exists(x => x == "a")</code>
-    <code>set.forall(x => x != "a")</code>
+Before:
+<pre>
+set.exists(x => x == "a")
+set.forall(x => x != "a")
+</pre>
 </p>
 <p>
-    After: <br>
-    <code>set.contains("a")</code>
-    <code>!set.contains("a")</code>
+After:
+<pre>
+set.contains("a")
+!set.contains("a")
+</pre>
 </p>
 
 </body>
