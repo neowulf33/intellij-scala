@@ -3,16 +3,18 @@
 Checking equality of the instance of <code>Option</code> and <code>Some(x)</code> can be replaced with <code>contains</code> or <code>!.contains:</code>
 
 <p>
-    Before: <br>
-    <code>option == Some(x)</code>
-    <code>Some(x) != option</code>
-</p>
+Before:
+<pre>
+option == Some(x)
+Some(x) != option
+</pre>
 
 
-<p>
-    After: <br>
-    <code>option.contains(x)</code>
-    <code>!option.contains(x)</code>
+After:
+<pre>
+option.contains(x)
+!option.contains(x)
+</pre>
 </p>
 
 </body>

@@ -3,16 +3,19 @@
 Detects if operation on collection may be simplified.
 
 <p>
-    Before: <br>
-    <code>option.map(myValueIsGoodEnough).getOrElse(false)</code>
-    <code>sequence.find(function).isDefined</code>
-    <code>iterable.foldLeft(0) { _ + _ }</code>
-</p>
-<p>
-    After: <br>
-    <code>option.exists(goodEnoughValue)</code>
-    <code>sequence.exists(function)</code>
-    <code>iterable.sum</code>
+Before:
+<pre>
+option.map(myValueIsGoodEnough).getOrElse(false)
+sequence.find(function).isDefined
+iterable.foldLeft(0) { _ + _ }
+</pre>
+
+After: 
+<pre>
+option.exists(goodEnoughValue)
+sequence.exists(function)
+iterable.sum
+</pre>
 </p>
 
 </body>

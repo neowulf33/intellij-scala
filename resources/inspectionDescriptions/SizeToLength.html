@@ -5,14 +5,16 @@ legitimate, they require an additional implicit conversion to <code>SeqLike</cod
 use case would be calling <code>length</code> on arrays and strings may provide significant advantages.
 
 <p>
-    Before: <br>
-    <code>Array(1, 2, 3, 4).size</code>
-    <code>"this is a string".size</code>
-</p>
-<p>
-    After: <br>
-    <code>Array(1, 2, 3, 4).length</code>
-    <code>"this is a string".length</code>
+Before:
+<pre>
+Array(1, 2, 3, 4).size
+"this is a string".size
+</pre>
+After:
+<pre>
+Array(1, 2, 3, 4).length
+"this is a string".length
+</pre>
 </p>
 
 </body>

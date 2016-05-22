@@ -3,20 +3,23 @@
 Replaces fold and reduce methods with sum, product, max or min if possible.
 
 <p>
-    Before: <br>
-    <code>List(1, 2, 3).foldLeft(1){(x,y) => x * y}</code>
-    <code>List(1, 2, 3).fold(0)(_ + _)</code>
-    <code>List(1, 2, 3).reduce(_ + _)</code>
-    <code>List(1, 2, 3).reduceLeft(_ min _)</code>
-    <code>List(1, 2, 3).reduce((x, y) => math.max(x, y))</code>
-</p>
-<p>
-    After: <br>
-    <code>List(1, 2, 3).product</code>
-    <code>List(1, 2, 3).sum</code>
-    <code>List(1, 2, 3).sum</code>
-    <code>List(1, 2, 3).min</code>
-    <code>List(1, 2, 3).max</code>
+Before:
+<pre>
+List(1, 2, 3).foldLeft(1){(x,y) => x * y}
+List(1, 2, 3).fold(0)(_ + _)
+List(1, 2, 3).reduce(_ + _)
+List(1, 2, 3).reduceLeft(_ min _)
+List(1, 2, 3).reduce((x, y) => math.max(x, y))
+</pre>
+
+After: 
+<pre>
+List(1, 2, 3).product
+List(1, 2, 3).sum
+List(1, 2, 3).sum
+List(1, 2, 3).min
+List(1, 2, 3).max
+</pre>
 </p>
 
 </body>

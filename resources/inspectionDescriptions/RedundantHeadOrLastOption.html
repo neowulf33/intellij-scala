@@ -3,14 +3,17 @@
 HeadOption and lastOption are redundant on the instance of Option.
 
 <p>
-    Before: <br>
-    <code>option.lastOption</code>
-    <code>seq.find(p).headOption</code>
-</p>
-<p>
-    After: <br>
-    <code>option</code>
-    <code>seq.find(p)</code>
+Before:
+<pre>
+option.lastOption
+seq.find(p).headOption
+</pre>
+
+After:
+<pre>
+option
+seq.find(p)
+</pre>
 </p>
 
 </body>

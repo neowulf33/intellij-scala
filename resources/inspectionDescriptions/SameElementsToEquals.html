@@ -6,14 +6,17 @@ elements. Inspection suggests to replace appropriate usages of methods <code>sam
 equivalent equality check.
 
 <p>
-    Before: <br>
-    <code>seq sameElements list</code>
-    <code>hashSet sameElements treeSet -> </code>
-</p>
-<p>
-    After: <br>
-    <code>seq == list</code>
-    <code>hashSet == treeSet</code>
+Before:
+<pre>
+seq sameElements list
+hashSet sameElements treeSet
+</pre>
+
+After:
+<pre>
+seq == list
+hashSet == treeSet
+</pre>
 </p>
 
 </body>
