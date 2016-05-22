@@ -11,7 +11,8 @@ Seq(Seq(2, 7, 1), Seq(8, 2), Seq(8, 1)).flatMap(x => x)
 Set(Set(1), Set(2), Set(3)).flatMap(x => x)
 </pre>
 
-After: 
+<br>
+After:
 <pre>
 Seq(Seq(1), Seq(2), Seq(2)).flatten
 Seq(Seq(1, 2, 3), Seq(4, 5), Seq(6, 7)).flatten
