@@ -8,7 +8,8 @@ Before:
 option.map(p).getOrElse(false)
 option.map(p).getOrElse(true)
 </pre>
-After: 
+
+After:
 <pre>
 option.exists(p)
 option.forall(p)

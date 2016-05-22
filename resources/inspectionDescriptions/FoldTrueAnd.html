@@ -7,6 +7,7 @@ Before:
 <pre>
 seq.foldLeft(true)((x,y) => x && p(y))
 </pre>
+
 After:
 <pre>
 seq.forall(p)

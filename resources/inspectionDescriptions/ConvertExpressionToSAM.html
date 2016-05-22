@@ -9,6 +9,7 @@ new Thread(new Runnable {
     override def run() = println()
 }
 </pre>
+
 After:
 <pre>
 new Thread(() => println())

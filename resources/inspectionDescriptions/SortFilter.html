@@ -8,6 +8,7 @@ Before:
 seq.sortWith(lessThan).filter(p)
 seq.sortBy(f).filter(p)
 </pre>
+
 After:
 <pre>
 seq.filter(p).sortWith(lessThan)

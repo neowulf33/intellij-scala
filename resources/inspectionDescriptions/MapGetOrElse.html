@@ -7,7 +7,8 @@ Before:
 <pre>
 option.map(f)getOrElse(default)
 </pre>
-After: 
+
+After:
 <pre>
 option.fold(default)(f)
 </pre>
