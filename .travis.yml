@@ -1,3 +1,18 @@
 language: scala
 scala:
 - 2.11.6
+
+sbt_args: -J-Xss2048m
+
+jdk:
+  - oraclejdk8
+
+cache:
+  directories:
+    - $HOME/.m2/repository
+    - $HOME/.sbt
+    - $HOME/.ivy2
+    
+notifications:
+  email:
+    - snv.kommuri@gmail.com
