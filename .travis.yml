@@ -7,6 +7,9 @@ scala:
 
 #sbt_args: -J-Xss2048m
 
+jdk:
+  - oraclejdk8
+
 # safelist
 branches:
   only:
