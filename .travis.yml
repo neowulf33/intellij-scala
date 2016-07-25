@@ -1,6 +1,25 @@
 language: scala
+
 scala:
    - 2.9.3
    - 2.10.4
    - 2.11.2
-# sbt_args: -J-Xss2048m
+
+#sbt_args: -J-Xss2048m
+
+# safelist
+branches:
+  only:
+  - idea162.x
+  - SCL-9579
+
+cache:
+  directories:
+    - $HOME/.m2/repository
+    - $HOME/.sbt
+    - $HOME/.ivy2
+    
+notifications:
+  email:
+    - snv.kommuri@gmail.com
+
