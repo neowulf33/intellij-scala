@@ -2,7 +2,7 @@ language: scala
 scala:
 - 2.11.6
 
-sbt_args: -J-Xms1024m -J-Xmx1024m -J-XX:ReservedCodeCacheSize=128m -J-XX:+HeapDumpOnOutOfMemoryError -Didea.is.internal=true -Didea.debug.mode=true -Didea.system.path=/home/travis/.IdeaData/IDEA-15/scala/system -Didea.config.path=/home/travis/.IdeaData/IDEA-15/scala/config -Dapple.laf.useScreenMenuBar=true -Dplugin.path=/home/travis/build/neowulf33/intellij-scala/out/plugin/Scala
+sbt_args: -v -J-Xms1024m -J-Xmx1024m -J-XX:ReservedCodeCacheSize=128m -J-XX:ExitOnFullCodeCache=true -J-XX:+HeapDumpOnOutOfMemoryError -Didea.is.internal=true -Didea.debug.mode=true -Didea.system.path=/home/travis/.IdeaData/IDEA-15/scala/system -Didea.config.path=/home/travis/.IdeaData/IDEA-15/scala/config -Dapple.laf.useScreenMenuBar=true -Dplugin.path=/home/travis/build/neowulf33/intellij-scala/out/plugin/Scala
 
 jdk:
   - oraclejdk7
