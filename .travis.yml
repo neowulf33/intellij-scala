@@ -1,5 +1,7 @@
 language: scala
 
+sudo: true
+
 # dependencies.Version
 scala:
   - 2.11.6
