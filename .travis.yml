@@ -9,15 +9,19 @@ sudo: true
 scala:
   - 2.11.6
 
-sbt_args: -v -J-Xmx2G -J-XX:ReservedCodeCacheSize=128m -J-XX:+CMSClassUnloadingEnabled
-
 # sbt_args: -v -J-Xms1024m -J-Xmx1024m -J-XX:ReservedCodeCacheSize=128m -J-XX:+HeapDumpOnOutOfMemoryError 
 #  -Didea.is.internal=true -Didea.debug.mode=true -Didea.system.path=/home/travis/.IdeaData/IDEA-15/scala/system 
 #  -Didea.config.path=/home/travis/.IdeaData/IDEA-15/scala/config -Dapple.laf.useScreenMenuBar=true 
 #  -Dplugin.path=/home/travis/build/neowulf33/intellij-scala/out/plugin/Scala
 
 script:
-   - sbt ++$TRAVIS_SCALA_VERSION ;packagePluginCommunity ;runFastTests
+  - sbt ++$TRAVIS_SCALA_VERSION -v -J-Xmx2G -J-XX:+CMSClassUnloadingEnabled -Dfile.encoding=UTF8 -J-XX:ReservedCodeCacheSize=256M runFastTests
+
+  # Tricks to avoid unnecessary cache updates
+  - find $HOME/.sbt -name "*.lock" | xargs rm
+  - find $HOME/.ivy2 -name "ivydata-*.properties" | xargs rm
+
+# sbt ++$TRAVIS_SCALA_VERSION ;packagePluginCommunity ;runFastTests
 
 jdk:
   - oraclejdk8
