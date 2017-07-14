@@ -1,3 +1,6 @@
+# Upgrading build server to precise
+dist: precise
+
 language: scala
 
 sudo: true
